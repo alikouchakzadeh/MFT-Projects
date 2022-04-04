@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+
+@font-face {
+    font-family: "AFSANEH";
+    src: url(./AFSANEH.ttf);
+  }
+
+  @font-face {
+    font-family: "yekan";
+    src: url(./Yekan.ttf);
+  }
+
+h1 {
+  font-family: AFSANEH;
+  padding: 5px;
+  border: 2px solid rgb(60, 60, 173);
+  background-color: rgb(60, 60, 173);
+  color: aliceblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 400;
+  box-shadow: 5px 5px 10px black;
+}
+
+.container {
+  margin: 60px;
+  font-family: yekan;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+.jobs {
+  font-weight: 500;
+}
+
+.card-body {
+  margin-right: 10px;
+  background-color: rgb(0, 162, 255);
+  border-radius: 10px;
+}
+
+hr {
+  border: 5px solid;
+}
+

@@ -1,0 +1,851 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@font-face {
+    src: url("../FONTS/Yekan.ttf");
+    font-family: yekan;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    object-fit: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    direction: rtl;
+    font-family: yekan;
+    font-size: 18px;
+    background-color: black;
+}
+
+.arrow-up a i {
+    position: fixed;
+    top: 90%;
+    right: 10%;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.arrow-up a i:hover {
+    color: rgb(83, 6, 6);
+}
+
+header {
+    background-color: #222222e6;
+}
+
+a {
+    color: blanchedalmond;
+}
+
+i {
+    font-size: 30px;
+    color: #eb8307;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.position-relative {
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .container ul {
+    display: flex;
+}
+
+
+header .container ul li a {
+    display: block;
+    border-top: 2px solid #eb8307;
+    border-bottom: 2px solid #eb8307;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+header .container .logo {
+    margin-top: 10px;
+}
+
+header .container .logo a {
+    padding: 0px 5px;
+}
+
+header .container .logo i {
+    transition: all 0.5s;
+}
+
+header .container .logo i:hover {
+    color: rgb(83, 6, 6);
+}
+
+header .container .dropdown-items li {
+    display: block !important;
+    border: 1px solid transparent;
+    margin-top: 10px;
+    text-align: center;
+}
+
+header .container .dropdown-items li a {
+    text-align: center;
+    padding: 0px 5px;
+}
+
+header .container .dropdown-items {
+    position: absolute;
+    top: 48px;
+    right: -3px;
+    width: 150px;
+    z-index: 1;
+    display: none;
+    margin-top: 3px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    background-color: #222222e6;
+    border: 2px solid #ca7105;
+    border-top: transparent;
+    border-radius: 10px;
+    transition: all 0.5s !important;
+}
+
+.dropdown:hover .dropdown-items {
+    display: block;
+}
+
+header .container .dropdown-items a {
+    display: inline-block;
+    border: none;
+}
+
+header .container ul li a:hover {
+    background-color: rgb(83, 6, 6);
+    border-bottom-color: transparent;
+}
+
+h1 {
+    color: blanchedalmond;
+}
+
+section.wellcome {
+    position: relative;
+    background: url("../IMAGES/ticket.jpg") no-repeat center / cover;
+    min-height: 50vh;
+}
+
+section.wellcome h1 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 50px;
+    top: 45%;
+    left: 35%;
+}
+
+section.wellcome a {
+    transition: all 0.5s;
+}
+
+section.wellcome a:hover {
+    color: rgb(83, 6, 6);
+    text-shadow: -10px 10px 5px white;
+}
+
+section.genre {
+    display: flex;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.158), rgb(255, 94, 0), rgba(255, 0, 0, 0.158));
+    box-shadow: 10px 2px 20px #ca7105;
+}
+
+section.genre .container a {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    width: 70px;
+    margin: 10px 30px ;
+    transition: 0.5s;
+}
+
+section.genre .container a:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(83, 6, 6);
+    transition: 0.5s;
+
+}
+
+section.genre .container a:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(83, 6, 6);
+    transition: 0.5s;
+
+}
+
+
+
+section.genre .container a:hover:after {
+    width: 100%;
+}
+
+section.genre .container a:hover:before {
+    width: 100%;
+}
+
+section.genre .container a:hover {
+    box-shadow: 1px 1px 10px rgb(83, 6, 6);
+    background-color: #ca7105;
+}
+
+.movie-genre {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-genre div {
+    position: relative;
+    width: 300px;
+    height: 220px;
+    border-radius: 5px;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.movie-genre div:hover {
+    opacity: 1.5;
+}
+
+.movie-genre div a {
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 3.5%;
+    width: 280px;
+    height: 200px;
+    border: 1px solid blanchedalmond;
+    padding: 80px 100px;
+    font-size: x-large;
+    transition: 0.5s;
+}
+
+
+.movie-genre div a:hover {
+    font-size: xx-large;
+}
+section.movie .horror {
+    background: url("../IMAGES/horror.jpg") no-repeat center / cover;
+}
+
+section.movie .drama {
+    background: url("../IMAGES/Drama.jpg") no-repeat center / cover;
+}
+
+section.movie .action {
+    background: url("../IMAGES/action.jpg") no-repeat center / cover;
+}
+
+section.main-content {
+    display: flex;
+    margin-top: 50px;
+}
+
+section.main-content .main {
+    flex-grow: 3;
+}
+
+section.main-content .aside {
+    flex-grow: 1;
+}
+
+.aside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aside .aside-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: antiquewhite;
+    width: 250px;
+    height: 400px;
+    background-color: #222222e6;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-top: 2px solid #eb8307;
+    border-bottom: 2px solid #eb8307;
+
+}
+
+section.main-content .main {
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.main-content .main h3 {
+    margin-top: 20px;
+    color: antiquewhite;
+    border-bottom: 1px solid #ca7105;
+}
+
+section.main-content .main .movies {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222222e6;
+    width: 650px;
+    height: 790px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-bottom: 3px solid #eb8307;
+    border-top: 3px solid #eb8307;
+}
+
+video {
+    width: 550px;
+    height: 350px;
+    border: 3px solid #ca7105;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+section.main-content .main .movies video:hover {
+    opacity: 0.6;
+}
+
+section.main-content .main .movies h4 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px 0px 0px 0px;
+    font-size: larger;
+}
+
+section.main-content .main .movies h5 {
+    margin-bottom: 25px;
+}
+
+
+section.main-content .main .movies p {
+    text-align: center;
+    margin: 0px 20px;
+    margin-bottom: 10px;
+}
+
+.aside .intro {
+    color: antiquewhite;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222222e6;
+}
+
+.aside .intro div {
+    background-color: #222222e6;
+    margin: 25px 0px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #ca7105;
+}
+
+.aside .intro div img {
+    width: 75px;
+    height: auto;
+}
+
+.aside .intro .icons {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.aside .intro p {
+    margin: 0px 10px;
+}
+
+.aside .dropdown p {
+    padding-bottom: 10px;
+    margin: 15px 0px;
+    border-bottom: 2px solid #ca7105;
+}
+
+.aside .dropdown ul li a {
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+.aside .dropdown ul li {
+    border-bottom: 3px solid rgb(83, 6, 6);
+    transition: 0.5s;
+}
+
+
+.aside .dropdown ul li:hover {
+    background-color: rgb(83, 6, 6);
+    border-bottom-color: #ca7105;
+}
+
+.aside-menu>p {
+    border-bottom: 2px solid #ca7105;
+    padding-bottom: 10px;
+    margin: 15px 0px;
+}
+
+
+.aside-menu .lastest-movies {
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: repeat(1fr , 1);
+}
+
+.aside-menu .lastest-movies a:hover {
+    color: rgb(83, 6, 6) !important;
+}
+
+.aside .last-movie {
+    height: 470px;
+}
+
+.aside-menu .lastest-movies>div {
+    margin: 5px 0;
+    border-bottom: 2px solid #ca7105;
+}
+
+.aside-menu .lastest-movies .movies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-critic span  {
+    padding: 10px 10px ;
+}
+
+.last-critic a {
+    transition: 0.5s;
+    padding-bottom: 15px;
+}
+
+.last-critic a:hover {
+    color:rgb(83, 6, 6);    
+}
+
+.aside-menu .lastest-movies img {
+    width: 80px;
+    height: 60px;
+    margin-right: 15px;
+    margin-bottom: 3px;
+    border: 1px solid #ca7105;
+}
+
+.last-critic {
+    height: fit-content !important;
+}
+
+.comercial img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.post {
+    font-size: 15px;
+    border-bottom: 1px solid #eb8307;
+
+}
+
+.post i {
+    font-size: 20px;
+}
+
+
+.commnet {
+    display: flex;
+    align-items: center;
+}
+
+
+.post img {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 15px;
+    border: 1px solid #ca7105;
+}
+
+.icons-comment {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.comercial {
+    height: fit-content !important;
+}
+
+.movies span {
+    font-size: 20px;
+}
+
+.main-content .movies .social-links i {
+    font-size: 25px;
+    border: 1px solid #ca7105;
+    border-radius: 50%;
+    margin-top: 10px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.main-content .movies .social-links i:hover {
+    color:rgb(83, 6, 6);
+    font-size: 50px;
+}
+
+.main-content .movies .links i {
+    font-size: 20px;
+    margin: 0px 10px;
+    transition: 0.3s;
+}
+
+
+.main-content .movies .links a:hover {
+    color: rgb(83, 6, 6);
+    font-size: 500px;
+}
+
+.main-content .movies .links span {
+    font-size: 20px;
+}
+
+.main-content .movies a {
+    transition: 0.5s;
+}
+
+.main-content .movies a:hover {
+    color: #eb8307;
+}
+
+.main-content .movies-btn {
+    display: flex;
+    justify-content: space-between;
+    width:650px;
+    height: 78px;
+    border-bottom: 2px solid #eb8307;
+    border-radius: 10px;
+}
+
+.main-content .movies-btn a {
+    font-weight: 900;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 1px solid #eb8307;
+    transition: 0.5s;
+}
+
+.main-content .movies-btn a:hover {
+    background-color: rgb(83, 6, 6);
+    color: #eb8307;
+}
+
+section.main-content .main .director {
+    display: grid;
+    grid-template-columns:repeat(2 , 50%);
+    background-color: #222222e6;
+    width: 650px;
+    height: fit-content;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border-bottom: 3px solid #eb8307;
+    border-top: 3px solid #eb8307;
+}
+
+
+section.main-content .main .director div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid #eb8307;
+    margin: 5px;
+    text-align: center;
+}
+
+section.main-content .main .director img {
+    width: 200px;
+    height: 150px;
+    border: 2px solid #ca7105;
+    margin: 5px 0;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+section.main-content .main .director img:hover {
+    box-shadow: 0 0 10px currentColor;
+    border: 2px solid #ca7105;
+    filter: grayscale(0.2);
+    opacity: 0.5;
+}
+
+
+footer .instagram {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    height: fit-content;
+}
+
+footer .instagram .picture {
+    display: grid;
+    grid-template-columns:repeat(6 , 200px);
+}
+
+footer .instagram .picture a {
+    text-align: center;
+}
+
+footer .instagram .picture .one {
+    background: url(../IMAGES/Robert\ Deniro.jpg) no-repeat center / cover;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 25vh;
+}
+
+footer .instagram .picture .two {
+    background: url(../IMAGES/Al\ pacino.jpg) no-repeat center / cover;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 25vh;
+}
+
+footer .instagram .picture .three {
+    background: url(../IMAGES/meryl\ streep.jpg) no-repeat center / cover;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 25vh;
+}
+
+footer .instagram .picture .four {
+    background: url(../IMAGES/margot\ robbie.jpg) no-repeat center / cover;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 25vh;
+}
+
+footer .instagram .picture .five {
+    background: url(../IMAGES/Nicole\ Kidman.jpg) no-repeat center / cover;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 25vh;
+}
+
+footer .instagram .picture .six {
+    background: url(../IMAGES/Leonardo\ DiCaprio.jpg) no-repeat center / cover;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 25vh;
+}
+
+footer .instagram .picture .seven {
+    background: url(../IMAGES/hugh\ jackman.jpg) no-repeat center / cover;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 25vh;
+}
+
+footer .instagram .picture .eight {
+    background: url(../IMAGES/Audrey\ Hepburn.jpg) no-repeat center / cover;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 25vh;
+}
+
+footer .instagram .picture .nine {
+    background: url(../IMAGES/Johnny\ Depp.jpg) no-repeat center / cover;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 25vh;
+}
+
+footer .instagram .picture .ten {
+    background: url(../IMAGES/scarlett.jfif) no-repeat center / cover;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 25vh;
+}
+
+footer .instagram .picture .eleven {
+    background: url(../IMAGES/natalie.jpg) no-repeat center / cover;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 25vh;
+}
+
+footer .instagram .picture .twelve {
+    background: url(../IMAGES/tom.jpg) no-repeat center / cover;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 25vh;
+}
+
+footer .instagram .site-law {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+footer .instagram .picture div {
+    transition: all 0.5s;
+}
+
+footer .instagram .picture div:hover {
+    opacity: 0.5;
+    filter:blur(2px);
+    cursor: pointer;
+}
+
+.user-form {
+    background-color: red;
+    color: white;
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+    background-color: #222222e6;
+    border-top: 4px solid #eb8307;
+    border-bottom: 4px solid #eb8307;
+    border-radius: 10px;
+}
+
+.user-form h2 {
+    color: white;
+    text-align: center;
+}
+
+.user-form span {
+    color: #eb8307;
+}
+
+.user-form div {
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.user-form button {
+    width: 90%;
+    text-align: center;
+    margin-right: 45px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: yekan;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: rgb(83, 6, 6);
+    color: white;
+    border: 2px solid #ca7105;
+    transition: all 0.5s;
+}
+
+.user-form button:hover {
+    color: #eb8307;
+    background-color: black;
+    border-color: rgb(83, 6, 6);
+}
+
+.user-form fieldset {
+    border: 1px solid #eb8307;
+    border-radius: 10px;
+    margin: 5px 5px;
+    padding: 5px 0px;
+}
+
+.user-form input {
+    margin: 10px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.user-form select {
+    margin: 10px;
+    height: 25px;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-family: yekan;
+    font-size: 16px;
+}
+
+.user-form input:focus {
+    outline: none;
+    box-shadow: 5px 5px 15px #ca7105;
+}
+
+.user-form select:focus {
+    outline: none;
+    box-shadow: 5px 5px 15px #ca7105;
+}

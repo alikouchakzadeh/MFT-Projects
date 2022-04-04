@@ -1,0 +1,17 @@
+{
+  "name": "final-project---web-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass scss:assets/css --watch"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.3",
+    "sass": "^1.49.0"
+  }
+}

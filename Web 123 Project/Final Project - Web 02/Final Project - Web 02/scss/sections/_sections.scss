@@ -1,0 +1,71 @@
+.first-section {
+    background: url(../../assets/image/bg1.png) no-repeat;
+    padding: 100px;
+    position: relative;
+    top: -50px;
+
+    & p {
+        font-size: 15px;
+    }
+}
+
+.second-section {
+    background: url(../../assets/image/bg2.png) no-repeat;
+    padding: 100px;
+    position: relative;
+    top: -164px;
+
+    & a {
+        transition: all 0.5s;
+
+        &:hover {
+
+            color: rgb(163, 0, 0) !important;
+            background-color: transparent !important;
+            text-shadow: 2px 2px 10px currentColor;
+            transform: translateY(-5px);
+        }
+    }
+}
+
+.third-section {
+    background: url(../../assets/image/bg3.png) no-repeat;
+    height: 100%; 
+    padding: 100px;
+    position: relative;
+    top: -191px;
+    & p {
+        font-size: 12px;
+    }
+
+    & li {
+        font-size: 12px;
+    }
+}
+
+.fourth-section {
+    background: url(../../assets/image/bg4.png) no-repeat;
+    padding: 100px;
+    position: relative;
+    top: -248px;
+}
+
+.contact {
+    background: url(../../assets/image/headerbg.png) no-repeat;
+    height: 100%; 
+    padding: 100px;
+}
+
+.map-form {
+    background: url(../../assets/image/contactbg.png) no-repeat;
+    height: 100%; 
+    padding: 100px;
+    position: relative;
+    top: -107px;
+}
+
+.end-section {
+    position: relative;
+    top: -147px;
+    
+}

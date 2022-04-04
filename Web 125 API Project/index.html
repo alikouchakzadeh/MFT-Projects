@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>API Project</title>
+</head>
+<body class="bg-secondary">
+  <h1 class="text-center">اطلاعات رزومه ها</h1>
+<body>
+  <div id="information"></div>
+    <script type="text/handlebars" id="usersinfo">
+      {{#each jobs}}
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="card bg-primary rounded m-3">
+                <div class="card-header">
+                <div class="jobTitle">
+                  <img src="{{img}}" alt="">
+                </div>
+                <div class="card-body">
+                <div class="jobs text-white p-3 mb-2 text-capitalize shadow">
+                  <p class="style">
+                  {{title}}
+                  </p>
+                  <div">
+                  {{company}}
+                </div>
+                <div class="jobInfo">
+                  <div class="d-block">
+                    {{salary}}
+                  </div>
+                </div>
+                <div class="d-block">
+                  {{type}}
+                </div>
+                    {{loc}}
+                    <div class="d-block">
+                    {{posted}}
+                    </div>
+                  </div>
+                    <div class="card-footer ">
+                    <div class="d-block">
+                      <button class="btn btn-warning">جهت اطلاعات بیشتر کلیک کنید ...</button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <hr class="bg-warning">
+      {{/each}}
+    </script>
+    
+     <script src="./jQuery.js"></script>
+     <script src="./handlebars.js"></script>   
+    <script src="./app.js"></script>
+</body>
+</html>
